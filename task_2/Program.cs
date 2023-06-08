@@ -1,6 +1,6 @@
 ﻿ArrayTasksFromFile Tasks = new ArrayTasksFromFile();
 
-int [] CheckNuber(string? str, int sign= 0)
+int [] CheckNumber(string? str, int sign= 0)
 {
      int count = 0;
      int number;
@@ -62,7 +62,7 @@ void SecondSingFinder(string? task, string? taskStr = "данные", int positi
         System.Console.WriteLine(task);
         System.Console.Write($"Введите {taskStr}: ");
         string? str = Console.ReadLine();
-        resultChecking = CheckNuber(str, sign); 
+        resultChecking = CheckNumber(str, sign); 
         if (resultChecking[0] != 0)
         {
             System.Console.WriteLine("Вы ввели не правильные данные, для перехода к другой задаче нажмите 'ESC'");
@@ -94,7 +94,7 @@ void FirdSingFinder(string? task, string? taskStr = "данные", int position
         System.Console.WriteLine(task);
         System.Console.Write($"Введите {taskStr}: ");
         string? str = Console.ReadLine();
-        resultChecking = CheckNuber(str, sign);
+        resultChecking = CheckNumber(str, sign);
         if (resultChecking[0] != 0)
         {
             System.Console.WriteLine("Вы ввели не правильные данные, для перехода к другой задаче нажмите 'ESC'");
@@ -133,7 +133,7 @@ void CheckDayHollyday(string? task)
             System.Console.WriteLine(task);
             System.Console.Write("Пожалуйста введите номер дня недели, чтобы узнать является ли это день выходным - ");
             string? str = Console.ReadLine();
-            resultChecking = CheckNuber(str); 
+            resultChecking = CheckNumber(str); 
             if (resultChecking[0] != 0 || resultChecking[1] <= 0 || resultChecking[1] > 7 )
             {
                 System.Console.WriteLine("Вы ввели не правильные данные, для выхода нажмите 'ESC'");
